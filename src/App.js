@@ -64,7 +64,11 @@ const App = () => {
                 element={<BoardOfDirectors />}
               />
               <Route exact path="/management-team" element={<Team />} />
-              <Route exact path="/other-team-members" element={<OtherTeamMembers />} />
+              <Route
+                exact
+                path="/other-team-members"
+                element={<OtherTeamMembers />}
+              />
 
               <Route exact path="/career" element={<Career />} />
               <Route exact path="/corporate-travels" element={<Corporate />} />

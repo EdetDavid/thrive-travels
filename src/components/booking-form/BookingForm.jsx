@@ -96,7 +96,7 @@ const BookingForm = () => {
     axios
       .post(
         // "http://127.0.0.1:8000/api/flight-search",
-        "https://thrivenig-backend.onrender.com/api/flight-search/",
+        "https://thrivenig-backend.onrender.com/api/flight-search",
         flightForm
       )
       .then((response) => {

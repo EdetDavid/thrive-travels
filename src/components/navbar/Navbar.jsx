@@ -3,18 +3,18 @@ import { NavLink, useLocation } from "react-router-dom";
 import color from "../../config/colors";
 import logo from "../../assets/logos/logo-1.png";
 import { useCookies } from "react-cookie";
-
 import "./navbar.css";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
   const location = useLocation();
   const [token, setToken, removeToken] = useCookies(["mytoken"]);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
 
   const logoutBtn = () => {
     removeToken(["mytoken"]);
-    
   };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsFixed(window.scrollY > 30);
@@ -41,10 +41,14 @@ const Navbar = () => {
     }
   }, []);
 
+  const toggleDropdown = (id) => {
+    setDropdownOpen(dropdownOpen === id ? null : id);
+  };
+
   return (
     <nav
       id="myNav"
-      className={`navbar navbar-expand-lg navbar-light bg-white px-lg-5  black-shadow ${
+      className={`navbar navbar-expand-lg navbar-light bg-white px-lg-5 black-shadow ${
         isFixed ? "fixed-top" : ""
       }`}
     >
@@ -81,18 +85,27 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className="nav-item dropdown">
+            <li
+              className={`nav-item dropdown ${
+                dropdownOpen === "products" ? "show" : ""
+              }`}
+            >
               <NavLink
-                className="nav-link dropdown-toggle hide-nav"
-                to="#home"
+                className="nav-link dropdown-toggle"
+                to="#"
                 id="navbarDropdown"
                 role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                aria-expanded={dropdownOpen === "products"}
+                onClick={() => toggleDropdown("products")}
               >
                 Our Products
               </NavLink>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul
+                className={`dropdown-menu ${
+                  dropdownOpen === "products" ? "show" : ""
+                }`}
+                aria-labelledby="navbarDropdown"
+              >
                 <li>
                   <NavLink
                     className="dropdown-item hide-nav"
@@ -132,18 +145,28 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li className="nav-item dropdown">
+            <li
+              className={`nav-item  dropdown ${
+                dropdownOpen === "team" ? "show" : ""
+              }`}
+            >
               <NavLink
-                className="nav-link dropdown-toggle hide-nav"
-                to="#home"
-                id="navbarDropdown"
+                className="nav-link dropdown-toggle"
+                to="#"
+                id="navbarDropdownTeam"
                 role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                aria-expanded={dropdownOpen === "team"}
+                onClick={() => toggleDropdown("team")}
               >
                 Team
               </NavLink>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul
+                id="team-dropdown"
+                className={`dropdown-menu  ${
+                  dropdownOpen === "team" ? "show" : ""
+                }`}
+                aria-labelledby="navbarDropdownTeam"
+              >
                 <li>
                   <NavLink
                     className="dropdown-item hide-nav"
@@ -170,11 +193,6 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-{/*             <li className="nav-item">
-              <NavLink className="nav-link hide-nav" to="/career">
-                Career
-              </NavLink>
-            </li> */}
             <li className="nav-item">
               <NavLink className="nav-link hide-nav" to="/contact">
                 Contact Us
