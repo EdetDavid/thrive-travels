@@ -2,8 +2,8 @@ export default class APIService {
   static async loginUser(body) {
     try {
       const response = await fetch(
-        // "http://localhost:8000/api/auth/",
-        "https://thrivenig-backend.onrender.com/api/auth/",
+        "http://localhost:8000/api/auth/",
+        // "https://thrivenig-backend.onrender.com/api/auth/",
         {
           method: "POST",
           headers: {
@@ -26,8 +26,8 @@ export default class APIService {
   static async registerUser(body) {
     try {
       const response = await fetch(
-        // "http://localhost:8000/api/users/",
-        "https://thrivenig-backend.onrender.com/api/users/",
+        "http://localhost:8000/api/users/",
+        // "https://thrivenig-backend.onrender.com/api/users/",
         {
           method: "POST",
           headers: {

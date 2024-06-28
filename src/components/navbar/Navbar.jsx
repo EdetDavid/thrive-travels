@@ -194,6 +194,11 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link hide-nav" to="/book-flight">
+                Book Now
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link hide-nav" to="/contact">
                 Contact Us
               </NavLink>

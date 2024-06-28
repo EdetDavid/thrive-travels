@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
 import About from "./pages/about/About";
 import BoardOfDirectors from "./pages/team/BoardofDirectors";
 import Team from "./pages/team/Team";
-import Career from "./pages/career/Career";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Login from "./components/login/Login";
@@ -18,6 +17,7 @@ import musicFile from "./assets/music/wonderful-world.mp3";
 import NotFound from "./pages/notfound/NotFound";
 import BookingResults from "./components/booking-form/bookingResults";
 import OtherTeamMembers from "./pages/team/otherTeam";
+import BookingForm from "./components/booking-form/BookingForm";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -53,6 +53,12 @@ const App = () => {
               <Route
                 index
                 exact
+                path="/book-flight"
+                element={<BookingForm />}
+              />
+              <Route
+                index
+                exact
                 path="/booking-summary"
                 element={<BookingResults />}
               />
@@ -70,7 +76,6 @@ const App = () => {
                 element={<OtherTeamMembers />}
               />
 
-              <Route exact path="/career" element={<Career />} />
               <Route exact path="/corporate-travels" element={<Corporate />} />
               <Route
                 exact
