@@ -48,8 +48,8 @@ const Navbar = () => {
   return (
     <nav
       id="myNav"
-      className={`navbar navbar-expand-lg navbar-light bg-white px-lg-5 black-shadow ${
-        isFixed ? "fixed-top" : ""
+      className={`navbar navbar-expand-lg navbar-light bg-white px-lg-5  ${
+        isFixed ? "fixed-top black-shadow" : ""
       }`}
     >
       <div className="container-fluid ">
