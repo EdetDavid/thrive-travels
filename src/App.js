@@ -1,4 +1,4 @@
-import React, {  useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
@@ -20,7 +20,7 @@ import OtherTeamMembers from "./pages/team/otherTeam";
 import BookingForm from "./components/booking-form/BookingForm";
 
 const App = () => {
-  
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -30,11 +30,20 @@ const App = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const preloader = document.getElementById("preloader");
 
+    setTimeout(() => {
+      preloader.style.display = "none";
+      setLoading(false);
+    }, 2500);
+  }, []);
 
   return (
     <div className="App bg-light">
-       : 
+      {loading ? (
+        <div id="preloader" className="rotating-image"></div>
+      ) : (
         <>
           <Navbar />
          <BackgroundMusic src={musicFile} /> 
@@ -83,7 +92,7 @@ const App = () => {
           </div>
           <Footer />
         </>
-      
+      )}
     </div>
   );
 };
