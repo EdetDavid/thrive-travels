@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import logo from "../../assets/logos/logo-1.png";
 import "./navbar.css";
@@ -44,9 +44,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand">
+        <a href="/" className="navbar-brand">
           <img src={logo} alt="brand-logo" />
-        </NavLink>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -64,101 +64,101 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink className="nav-link hide-nav" to="/">
+              <a className="nav-link hide-nav" href="/">
                 Home
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link hide-nav" to="/about-us">
+              <a className="nav-link hide-nav" href="/about-us">
                 About Us
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item dropdown">
-              <span className="nav-link ">Our Products</span>
+              <span className="nav-link">Our Products</span>
               <ul className="dropdown-menu">
                 <li>
-                  <NavLink className="dropdown-item  hide-nav" to="/corporate-travels">
+                  <a className="dropdown-item hide-nav" href="/corporate-travels">
                     Corporate Travels
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
+                  <a
                     className="dropdown-item hide-nav"
-                    to="/flight-reservation-ticketing"
+                    href="/flight-reservation-ticketing"
                   >
                     Flight Reservation & Ticketing
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
+                  <a
                     className="dropdown-item hide-nav"
-                    to="/visa-assistant-services"
+                    href="/visa-assistant-services"
                   >
                     Visa Assistant Services
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item hide-nav" to="/travel-insurance">
+                  <a className="dropdown-item hide-nav" href="/travel-insurance">
                     Travel Insurance
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item hide-nav" to="/vip-travels">
+                  <a className="dropdown-item hide-nav" href="/vip-travels">
                     VIP Travels
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <span className="nav-link ">Team</span>
+              <span className="nav-link">Team</span>
               <ul className="dropdown-menu">
                 <li>
-                  <NavLink className="dropdown-item hide-nav" to="/board-of-directors">
+                  <a className="dropdown-item hide-nav" href="/board-of-directors">
                     Board of Directors
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item hide-nav" to="/management-team">
+                  <a className="dropdown-item hide-nav" href="/management-team">
                     Management Team
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item hide-nav" to="/other-team-members">
+                  <a className="dropdown-item hide-nav" href="/other-team-members">
                     Other Team Members
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link hide-nav" to="/book-flight">
+              <a className="nav-link hide-nav" href="/book-flight">
                 Book Now
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link hide-nav" to="/contact">
+              <a className="nav-link hide-nav" href="/contact">
                 Contact Us
-              </NavLink>
+              </a>
             </li>
           </ul>
           {location.pathname !== "/get-started" && (
             <form className="d-flex">
               {token["mytoken"] && token["mytoken"] !== "undefined" ? (
-                <NavLink
+                <a
                   onClick={logoutBtn}
                   style={styles.button}
-                  className="btn text-white "
-                  to="/"
+                  className="btn text-white"
+                  href="/"
                 >
                   Logout
-                </NavLink>
+                </a>
               ) : (
-                <NavLink
+                <a
                   style={styles.button}
                   className="btn text-white hide-nav"
-                  to="/get-started"
+                  href="/get-started"
                 >
                   Get Started
-                </NavLink>
+                </a>
               )}
             </form>
           )}
