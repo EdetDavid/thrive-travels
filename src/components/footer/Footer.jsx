@@ -50,7 +50,7 @@ const Footer = ({ className }) => {
           </div>
           <div className="footer-section">
             <p className="copywright">
-              &copy; {new Date().getFullYear()} Thrive Insurance Brokers Limited
+              &copy; {new Date().getFullYear()} Thrive Travels & Tours Limited
             </p>
           </div>
         </div>
