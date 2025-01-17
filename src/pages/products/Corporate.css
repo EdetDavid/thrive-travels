@@ -1,0 +1,39 @@
+.corporate {
+  background-image: url("./images/coporate.jpg");
+  height: 600px;
+  background-size: cover;
+}
+
+#img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.corporate h1 {
+  font-size: clamp(2rem, 5vw, 5rem); /* Responsive font size */
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .corporate {
+    background-size: cover;
+
+    margin-bottom: 0 !important;
+    height: 400px;
+    background-repeat: repeat-y;
+  }
+
+  .corporate h1 {
+    position: absolute !important;
+    top: 45%;
+    font-size: clamp(1.75rem, 4vw, 2.5rem); /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .corporate {
+    height: 400px;
+  }
+}
