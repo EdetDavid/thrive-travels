@@ -19,7 +19,6 @@
 @media (max-width: 768px) {
   .vacation {
     background-size: cover;
-
     margin-bottom: 0 !important;
     height: 400px;
     background-repeat: repeat-y;
