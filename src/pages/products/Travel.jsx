@@ -25,7 +25,7 @@ const Travel = () => {
             <img
               className="img-fluid"
               src={travel}
-              alt="international-sports-events"
+              alt="Corporate Travel"
               loading="lazy"
             />
           </div>

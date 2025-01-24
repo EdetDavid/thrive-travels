@@ -1,4 +1,3 @@
-import React from "react";
 import sportseventsImage from "./images/sports.jpg";
 import "./SportsEvents.css";
 
@@ -15,17 +14,18 @@ const SportsEvents = () => {
         <div className="d-flex flex-column flex-md-row justify-content-center align-items-center p-4 p-md-5 gap-4">
           <div className="col-12 col-md-6 bg-black rounded white-shadow p-4 p-md-5">
             <p className="lead text-white mb-0">
-              Streamline your business travel with our comprehensive solutions.
-              We handle everything from booking flights and accommodations to
-              managing itineraries and expense reports. Contact us today to
-              learn more about our tailored corporate travel packages.
+              Show true sportmanship. Miss no part of the live action of your
+              favourite sports premier league, UEFA champions league, Olympics,
+              World Cup, Formula 1 Grand Prix, Tennis Grand Slam and many more
+              with our international sports Events Travel Packages perfectly
+              suited for your pleasure.
             </p>
           </div>
           <div className="col-12 col-md-6 img-thumbnail gray-shadow">
             <img
               className="img-fluid"
               src={sportseventsImage}
-              alt="international-sports-events"
+              alt="Corporate Travel"
               loading="lazy"
             />
           </div>

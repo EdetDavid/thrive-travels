@@ -16,7 +16,9 @@ const Corporate = () => {
           <div className="col-12 col-md-6 bg-black rounded white-shadow p-4 p-md-5">
             <p className="lead text-white mb-0">
               Thrive Travels & Tours offers the best in corporate travels with
-              packages that help make business trips safer, efficient
+              packages that help make business trips safer, efficient,
+              productive and cost effective. Our Services here include Flights
+              Booking, Hotel Reservations and Car Rentals at destination.
             </p>
           </div>
           <div className="col-12 col-md-6 img-thumbnail gray-shadow">

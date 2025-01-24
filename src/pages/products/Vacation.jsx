@@ -1,5 +1,5 @@
 import React from "react";
-import corporateImage from "./images/vacation.jpg";
+import vacationImage from "./images/vacation.jpg";
 import "./Vacation.css";
 
 const Vacation = () => {
@@ -15,18 +15,16 @@ const Vacation = () => {
         <div className="d-flex flex-column flex-md-row justify-content-center align-items-center p-4 p-md-5 gap-4">
           <div className="col-12 col-md-6 bg-black rounded white-shadow p-4 p-md-5">
             <p className="lead text-white mb-0">
-              Escape the ordinary and explore the extraordinary with our
-              tailored vacation packages. Whether it's a serene getaway, a
-              family adventure, or a romantic retreat, our tours and special
-              offers promise unforgettable moments and cherished memories. Your
-              dream vacation starts here!
+              Thrive Travels & Tours can get unbeatable package deals for you
+              and your family. Hotel, FLight, Resort, Cruises all at very
+              attractive prices.
             </p>
           </div>
           <div className="col-12 col-md-6 img-thumbnail gray-shadow">
             <img
               className="img-fluid"
-              src={corporateImage}
-              alt="Corporate Travel"
+              src={vacationImage}
+              alt="Vacation-tours-special-packages"
               loading="lazy"
             />
           </div>
