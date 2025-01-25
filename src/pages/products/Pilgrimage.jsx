@@ -5,7 +5,7 @@ import "./Pilgrimage.css";
 const Pilgrimage = () => {
   return (
     <div className="container-fluid px-0 bg-dark m-0">
-      <section className="easypay d-flex flex-column justify-content-end align-items-center position-relative">
+      <section className="pilgrimage d-flex flex-column justify-content-end align-items-center position-relative">
         <h1 className="fw-bold display-1 red-text black-text-shadow mb-4">
           Pilgrimage packages
         </h1>
@@ -25,7 +25,7 @@ const Pilgrimage = () => {
             <img
               className="img-fluid"
               src={pilgrimageImage}
-              alt="Corporate Travel"
+              alt="Pilgrimage Paclkages"
               loading="lazy"
             />
           </div>
