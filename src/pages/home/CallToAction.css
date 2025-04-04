@@ -1,0 +1,70 @@
+@import "../../config/colors.css"; /* Import the color palette */
+
+.call-to-action {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--blue);
+  background-size: cover;
+  color: var(--white); /* Use white for the text */
+}
+
+.call-to-action h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--white); /* Ensure the heading text is white */
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--white); /* Use gray for the paragraph text */
+}
+
+.cta-buttons {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: var(--red); /* Use red for the button background */
+  color: var(--white); /* Use white for the button text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.cta-button.secondary {
+  background-color: var(--gray); /* Use gray for the secondary button */
+}
+
+.cta-button:hover {
+  background-color: var(--black); /* Use black for the hover background */
+}
+
+.countdown {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+#timer {
+  font-weight: bold;
+  color: var(--red);
+}
+
+.testimonial {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--white);
+}

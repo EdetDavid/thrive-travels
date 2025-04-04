@@ -10,8 +10,11 @@ import slide1 from "../../assets/images/slides/slide-1.jpg";
 import slide2 from "../../assets/images/slides/slide-2.jpg";
 import slide3 from "../../assets/images/slides/slide-3.jpg";
 
-// Import Images component
+// Import other components
 import Images from "./Images";
+import WelcomeSection from "./WelcomeSection";
+import PopularDestinations from "./PopularDestinations";
+import CallToAction from "./CallToAction";
 
 const Home = () => {
   const settings = {
@@ -31,12 +34,24 @@ const Home = () => {
   ];
 
   return (
-    <div className="carousel-container">
-      <Slider {...settings}>
-        {slides.map((slide, index) => (
-          <Images key={index} image={slide.image} caption={slide.caption} />
-        ))}
-      </Slider>
+    <div className="home-container">
+      {/* Carousel Section */}
+      <div className="carousel-container">
+        <Slider {...settings}>
+          {slides.map((slide, index) => (
+            <Images key={index} image={slide.image} caption={slide.caption} />
+          ))}
+        </Slider>
+      </div>
+
+      {/* Welcome Section */}
+      <WelcomeSection />
+
+      {/* Popular Destinations Section */}
+      <PopularDestinations />
+
+      {/* Call-to-Action Section */}
+      <CallToAction />
     </div>
   );
 };
