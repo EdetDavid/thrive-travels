@@ -63,7 +63,7 @@ const Footer = ({ className }) => {
                   className="nav-link"
                   href="https://www.tiktok.com/@thrivetravelsandtours?is_from_webapp=1&sender_device=pc"
                 >
-                  <FaTiktok /> <span className="icon-text">Ticktok</span>
+                  <FaTiktok /> <span className="icon-text">Tiktok</span>
                 </a>
               </li>
             </ul>
