@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import React Router's useNavigate
 import "./CallToAction.css";
 
 const CallToAction = () => {
   const [timeLeft, setTimeLeft] = useState(24 * 60 * 60); // 24 hours in seconds
-  const navigate = useNavigate(); // Initialize navigation
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -26,11 +24,11 @@ const CallToAction = () => {
       <p>Book your next adventure with us and experience the world like never before.</p>
       <div className="cta-buttons ">
         {/* Link the "Book Now" button to the booking page */}
-        <a href="book-flight" className="cta-button primary text-decoration-none" >
+        <a href="/book-flight" className="cta-button primary text-decoration-none">
           Book Now
         </a>
         {/* Link the "Learn More" button to the about page */}
-        <a href="about-us" className="cta-button secondary text-decoration-none" >
+        <a href="/about-us" className="cta-button secondary text-decoration-none">
           Learn More
         </a>
       </div>

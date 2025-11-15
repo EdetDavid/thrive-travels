@@ -6,7 +6,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
-  const [token, setToken, removeToken] = useCookies(["mytoken"]);
+  const [token, , removeToken] = useCookies(["mytoken"]);
   const location = useLocation();
 
   useEffect(() => {

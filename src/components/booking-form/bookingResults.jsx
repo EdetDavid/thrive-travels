@@ -95,9 +95,13 @@ const BookingResults = () => {
                         )
                       }
                     >
-                      <a href="#" className="nounderline text-info">
+                      <button
+                        type="button"
+                        className="nounderline text-info btn p-0"
+                        aria-label="arrival-details"
+                      >
                         &#10230;
-                      </a>
+                      </button>
                     </OverlayTrigger>{" "}
                     {offer["0firstFlightArrivalAirport"]}{" "}
                     {offer["0firstFlightArrivalDate"]}
@@ -123,9 +127,13 @@ const BookingResults = () => {
                             )
                           }
                         >
-                          <a href="#" className="nounderline text-info">
+                          <button
+                            type="button"
+                            className="nounderline text-info btn p-0"
+                            aria-label="arrival-details"
+                          >
                             &#10230;
-                          </a>
+                          </button>
                         </OverlayTrigger>{" "}
                         {offer["0secondFlightArrivalAirport"]}{" "}
                         {offer["0secondFlightArrivalDate"]}
@@ -157,9 +165,13 @@ const BookingResults = () => {
                             )
                           }
                         >
-                          <a href="#" className="nounderline text-info">
+                          <button
+                            type="button"
+                            className="nounderline text-info btn p-0"
+                            aria-label="arrival-details"
+                          >
                             &#10230;
-                          </a>
+                          </button>
                         </OverlayTrigger>{" "}
                         {offer["1firstFlightArrivalAirport"]}{" "}
                         {offer["1firstFlightArrivalDate"]}
@@ -185,9 +197,13 @@ const BookingResults = () => {
                                 )
                               }
                             >
-                              <a href="#" className="nounderline text-info">
+                              <button
+                                type="button"
+                                className="nounderline text-info btn p-0"
+                                aria-label="arrival-details"
+                              >
                                 &#10230;
-                              </a>
+                              </button>
                             </OverlayTrigger>{" "}
                             {offer["1secondFlightArrivalAirport"]}{" "}
                             {offer["1secondFlightArrivalDate"]}
@@ -237,9 +253,13 @@ const BookingResults = () => {
                         )
                       }
                     >
-                      <a href="#" className="nounderline text-info">
+                      <button
+                        type="button"
+                        className="nounderline text-info btn p-0"
+                        aria-label="arrival-details"
+                      >
                         &#10230;
-                      </a>
+                      </button>
                     </OverlayTrigger>{" "}
                     {offer["0firstFlightArrivalAirport"]}{" "}
                     {offer["0firstFlightArrivalDate"]}
@@ -265,9 +285,13 @@ const BookingResults = () => {
                             )
                           }
                         >
-                          <a href="#" className="nounderline text-info">
+                          <button
+                            type="button"
+                            className="nounderline text-info btn p-0"
+                            aria-label="arrival-details"
+                          >
                             &#10230;
-                          </a>
+                          </button>
                         </OverlayTrigger>{" "}
                         {offer["0secondFlightArrivalAirport"]}{" "}
                         {offer["0secondFlightArrivalDate"]}
@@ -299,9 +323,13 @@ const BookingResults = () => {
                             )
                           }
                         >
-                          <a href="#" className="nounderline text-info">
+                          <button
+                            type="button"
+                            className="nounderline text-info btn p-0"
+                            aria-label="arrival-details"
+                          >
                             &#10230;
-                          </a>
+                          </button>
                         </OverlayTrigger>{" "}
                         {offer["1firstFlightArrivalAirport"]}{" "}
                         {offer["1firstFlightArrivalDate"]}
@@ -327,9 +355,13 @@ const BookingResults = () => {
                                 )
                               }
                             >
-                              <a href="#" className="nounderline text-info">
+                              <button
+                                type="button"
+                                className="nounderline text-info btn p-0"
+                                aria-label="arrival-details"
+                              >
                                 &#10230;
-                              </a>
+                              </button>
                             </OverlayTrigger>{" "}
                             {offer["1secondFlightArrivalAirport"]}{" "}
                             {offer["1secondFlightArrivalDate"]}

@@ -4,87 +4,33 @@ import img5 from "../../assets/images/team2.png";
 import "./Team.css";
 
 const managementTeam = [
-  {
-    imgSrc: img4,
-    name: "Alice Johnson",
-    position: "CEO",
-    description: "Alice leads the company with a focus on innovation.",
-  },
-  {
-    imgSrc: img5,
-    name: "Bob Brown",
-    position: "CTO",
-    description: "Bob oversees all technical aspects of the company.",
-  },
-  {
-    imgSrc: img4,
-    name: "Carol White",
-    position: "CFO",
-    description: "Carol manages the company’s finances.",
-  },
-  {
-    imgSrc: img5,
-    name: "David Green",
-    position: "COO",
-    description: "David ensures operational excellence across the company.",
-  },
-  {
-    imgSrc: img4,
-    name: "David Green",
-    position: "COO",
-    description: "David ensures operational excellence across the company.",
-  },
-  {
-    imgSrc: img5,
-    name: "David Green",
-    position: "COO",
-    description: "David ensures operational excellence across the company.",
-  },
-  {
-    imgSrc: img4,
-    name: "David Green",
-    position: "COO",
-    description: "David ensures operational excellence across the company.",
-  },
-  {
-    imgSrc: img5,
-    name: "David Green",
-    position: "COO",
-    description: "David ensures operational excellence across the company.",
-  },
+  { imgSrc: img4, name: "Alice Johnson", role: "CEO", bio: "Leads the company with a focus on innovation and long-term strategy." },
+  { imgSrc: img5, name: "Bob Brown", role: "CTO", bio: "Leads product engineering and technology strategy." },
+  { imgSrc: img4, name: "Carol White", role: "CFO", bio: "Oversees financial planning and investor relations." },
+  { imgSrc: img5, name: "David Green", role: "COO", bio: "Runs operations and ensures delivery excellence." },
 ];
 
 const ManagementTeam = () => {
   return (
-    <section className="m-5 ">
-      <div className="container ">
-        <div data-aos="fade-up" className="row mb-5 ">
-          <div className="col text-center">
-            <h2 className="fw-bold text-dark">Management Team</h2>
-          </div>
-        </div>
-        <div
-          data-aos="zoom-in"
-          className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 shadow"
-        >
-          {managementTeam.map((member, index) => (
-            <div className="col shadow mx-auto" key={index}>
-              <div className="card h-100 d-flex flex-column">
-                <img
-                  src={member.imgSrc}
-                  className="card-img-top"
-                  alt={member.name}
-                  style={{ objectFit: "cover", height: "250px" }}
-                />
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">{member.name}</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">
-                    {member.position}
-                  </h6>
-                  <p className="card-text flex-grow-1">{member.description}</p>
-                </div>
+    <section className="management-team-section">
+      <div className="container">
+        <header className="management-header">
+          <h2 className="management-title">Management Team</h2>
+          <p className="management-subtitle">Experienced leadership driving business performance.</p>
+        </header>
+
+        <div className="management-grid">
+          {managementTeam.map((m, i) => (
+            <article className="management-card" key={i} tabIndex={0}>
+              <div className="card-media">
+                <img src={m.imgSrc} alt={m.name} className="card-photo" />
               </div>
-            </div>
+              <div className="card-body">
+                <h3 className="card-name">{m.name}</h3>
+                <p className="card-role">{m.role}</p>
+                <p className="card-bio">{m.bio}</p>
+              </div>
+            </article>
           ))}
         </div>
       </div>
