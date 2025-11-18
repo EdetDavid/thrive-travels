@@ -11,7 +11,7 @@ const directors = [
   {
     id: 1,
     name: " Omotayo Gabriel Moronkeji Ajani",
-    title: "Chairman",
+    title: "MD/CEO",
     image: TAYO,
     bio: "Omotayo holds a B.Sc. in Accounting from the University of Ilorin and an Executive MBA from Lagos Business School, Pan Atlantic University, and Bangor University, UK.",
     fullBio:
@@ -44,7 +44,7 @@ const directors = [
   {
     id: 3,
     name: "Tokunbo Abiola Adeleke",
-    title: "Executive Director",
+    title: "Non-Executive Director",
     image: Tokunbo,
     bio: "Tokunbo earned her B.Sc. in Geology from the Federal University of Technology Minna. She has over 8 years of experience in insurance and financial institutions.",
     fullBio:
@@ -342,3 +342,4 @@ const BoardOfDirectors = () => {
 };
 
 export default BoardOfDirectors;
+
