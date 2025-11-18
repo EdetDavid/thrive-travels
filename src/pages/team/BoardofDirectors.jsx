@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Team.css";
 import useInView from "../../hooks/useInView";
 import { staggerContainer, fadeInUp } from "../../utils/animation";
-import AKINWALE from "../../assets/images/directors/AKINWALE.png";
+import Tokunbo from "../../assets/images/directors/Tokunbo.png";
 import TAYO from "../../assets/images/directors/TAYO.png";
 import Toyin from "../../assets/images/directors/Toyin.png";
 
@@ -24,30 +24,31 @@ const directors = [
     ],
     order: 1,
   },
+
   {
     id: 2,
-    name: "Akinwale Adegboyega Adedoyin",
-    title: "MD/CEO",
-    image: AKINWALE,
-    bio: "Akinwale is the CEO of Thrive Insurance Brokers Limited. He holds a B.Sc. in Accounting and an MBA in Finance & Accounting.",
-    fullBio:
-      "Akinwale is the CEO of Thrive Insurance Brokers Limited. He holds a B.Sc. in Accounting and an MBA in Finance & Accounting. He is a Fellow of several professional institutes including ICAN, ICSA, and CIBN. With over 25 years of experience spanning insurance, consulting, and banking, he has worked with organizations such as Gateway Radio, Guinea Insurance Plc, Excel Insurance Brokers, Coral International Insurance Company Limited, among others.",
-    expertise: [
-      "Financial Strategy",
-      "Risk Management",
-      "Investment Banking",
-      "Institutional Finance",
-    ],
-    order: 2,
-  },
-  {
-    id: 3,
     name: "Oluwatoyin Adewuyi",
     title: "Executive Director",
     image: Toyin,
     bio: "Oluwatoyin Adewuyi holds a Bachelor of Technology degree in Transport Management from Ladoke Akintola University of Technology, Ogbomosho with specialization on Aviation and Maritime.",
     fullBio:
       "Oluwatoyin Adewuyi holds a Bachelor of Technology degree in Transport Management from Ladoke Akintola University of Technology, Ogbomosho with specialization on Aviation and Maritime. She has Diploma in Foundation on Travel and Tourism (IATA). She also has Master's degree in Transportation Planning and Management from the prestigious University of Lagos (UNILAG). Toyin has worked with different organizations in the Financial Institutions, Transportation and Maritime sectors ranging from Sterling Bank Plc, Bollore Africa Logistics (SDV), Lagos State Ministry of Transportation and Vehicle Licensing and Inspection office. She has taken several training in the areas of Travels, Tourisms, Airfares and Ticketing, IATA/UFTAA. She's also an expert on all GDS portal. Her interest in Transportation Management, Travels and Tourism started from the youthful years. Hence, her decision to choose a related career path as reflected in the educational background and work experience. Oluwatoyin was recently appointed as an Executive Director of Thrive Travels & Tours Limited.",
+    expertise: [
+      "Entrepreneurship",
+      "Innovation",
+      "Growth Strategy",
+      "Sustainable Business",
+    ],
+    order: 2,
+  },
+  {
+    id: 3,
+    name: "Tokunbo Abiola Adeleke",
+    title: "Executive Director",
+    image: Tokunbo,
+    bio: "Tokunbo earned her B.Sc. in Geology from the Federal University of Technology Minna. She has over 8 years of experience in insurance and financial institutions.",
+    fullBio:
+      "Tokunbo earned her B.Sc. in Geology from the Federal University of Technology Minna. She has over 8 years of experience in insurance and financial institutions. Her career began at Mutual Benefits Insurance Plc, where she worked in business development roles. She is currently an Executive Director at Thrive Insurance Brokers Limited and also serves as a Director on the board of Paradise Forex BDC Limited. She is concluding her studies to become a chartered insurer (CII UK).",
     expertise: [
       "Entrepreneurship",
       "Innovation",
