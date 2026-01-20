@@ -13,7 +13,7 @@ body {
   padding: 0;
   -webkit-user-select: none;
   scroll-behavior: smooth;
-  user-select: none ;
+  user-select: none;
 }
 
 .blue-text {
@@ -69,7 +69,9 @@ body {
 
 #nav-btn {
   color: white;
-  transition: background-color 0.5s ease-in, color 0.5s ease;
+  transition:
+    background-color 0.5s ease-in,
+    color 0.5s ease;
 }
 
 .img-fluid {
