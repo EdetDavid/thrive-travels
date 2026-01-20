@@ -1,0 +1,102 @@
+@import "../../config/colors.css"; /* Import the color palette */
+
+.call-to-action {
+  text-align: center;
+  padding: 30px 20px; /* Adjusted padding */
+  background: var(--blue);
+  background-size: cover;
+  color: var(--white);
+}
+
+.call-to-action h2 {
+  font-size: 2.2rem; /* Slightly increased font size */
+  margin-bottom: 15px; /* Adjusted margin */
+  color: var(--white);
+  font-weight: 600; /* Added font weight */
+}
+
+.call-to-action p {
+  font-size: 1.1rem; /* Slightly increased font size */
+  margin-bottom: 20px; /* Adjusted margin */
+  color: var(--white);
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+.cta-buttons {
+  margin-bottom: 20px; /* Adjusted margin */
+}
+
+.cta-button {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 12px 24px; /* Adjusted padding */
+  font-size: 1rem; /* Adjusted font size */
+  border-radius: 8px; /* Slightly larger border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Adjusted margin */
+  font-weight: 500; /* Added font weight */
+}
+
+.cta-button.secondary {
+  background-color: var(--gray);
+}
+
+.cta-button:hover {
+  background-color: var(--black);
+}
+
+.countdown {
+  margin-top: 20px; /* Adjusted margin */
+  font-size: 1.1rem; /* Adjusted font size */
+  color: var(--white);
+}
+
+#timer {
+  font-weight: bold;
+  color: var(--red);
+}
+
+.testimonial {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .call-to-action {
+    padding: 20px 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .call-to-action h2 {
+    font-size: 1.8rem; /* Further reduced font size for very small screens */
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+  }
+
+  .call-to-action p {
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+    margin-bottom: 15px; /* Adjusted margin for smaller screens */
+    line-height: 1.5; /* Adjusted line height for smaller screens */
+  }
+
+  .cta-button {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    padding: 10px 20px; /* Adjusted padding for smaller screens */
+    margin: 0 8px; /* Adjusted margin for smaller screens */
+  }
+
+  .countdown {
+    margin-top: 15px; /* Adjusted margin for smaller screens */
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+  }
+}

@@ -1,0 +1,110 @@
+@import "../../config/colors.css"; /* Import the color palette */
+
+.popular-destinations {
+  padding: 50px 20px; /* Adjusted padding */
+  background-color: #f4f4f4;
+}
+
+.popular-destinations h2 {
+  text-align: center;
+  font-size: 2.2rem; /* Slightly increased font size */
+  color: var(--blue);
+  margin-bottom: 30px; /* Adjusted margin */
+  font-weight: 600; /* Added font weight */
+}
+
+.scrolling-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto; /* Adjusted height */
+}
+
+.scrolling-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  gap: 25px; /* Adjusted gap */
+  width: max-content; /* Adjusted width */
+}
+
+.destination-card {
+  background-color: var(--white);
+  border-radius: 12px; /* Slightly larger border radius */
+  overflow: hidden;
+  text-align: center;
+  flex: 0 0 280px; /* Adjusted width */
+  width: 280px; /* Adjusted width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle box shadow */
+  transition: transform 0.3s ease; /* Added transition for hover effect */
+}
+
+.destination-card:hover {
+  transform: translateY(-5px); /* Added hover effect */
+}
+
+.destination-card img {
+  width: 100%;
+  height: 180px; /* Adjusted height */
+  object-fit: cover;
+  border-radius: 12px 12px 0 0; /* Rounded corners at the top */
+}
+
+.destination-card h3 {
+  font-size: 1.3rem; /* Adjusted font size */
+  color: var(--black);
+  margin: 12px 0 10px; /* Adjusted margin */
+  font-weight: 500; /* Added font weight */
+}
+
+.destination-card p {
+  font-size: 1rem; /* Adjusted font size */
+  color: var(--gray);
+  margin: 0 12px 15px; /* Adjusted margin */
+  line-height: 1.4; /* Improved line height for readability */
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move halfway to loop seamlessly */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .popular-destinations {
+    padding: 40px 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .popular-destinations h2 {
+    font-size: 1.8rem; /* Further reduced font size for very small screens */
+    margin-bottom: 25px; /* Adjusted margin for smaller screens */
+  }
+
+  .scrolling-container {
+    height: auto;
+  }
+
+  .destination-card {
+    width: 220px; /* Adjusted width for smaller screens */
+  }
+
+  .destination-card img {
+    height: 140px; /* Adjusted height for smaller screens */
+  }
+
+  .destination-card h3 {
+    font-size: 1.1rem; /* Adjusted font size for smaller screens */
+    margin: 10px 0 8px; /* Adjusted margin for smaller screens */
+  }
+
+  .destination-card p {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    margin: 0 10px 12px; /* Adjusted margin for smaller screens */
+  }
+}
