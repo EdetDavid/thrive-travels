@@ -14,7 +14,9 @@ export const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.45 } },
 };
 
-export default {
+const animations = {
   staggerContainer,
   fadeInUp,
 };
+
+export default animations;

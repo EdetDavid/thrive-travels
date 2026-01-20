@@ -8,7 +8,7 @@ const BookingForm = () => {
   const [isFlightBooking, setIsFlightBooking] = useState(true);
   const [isLocal, setIsLocal] = useState(true);
   const [loading, setLoading] = useState(false); // State to track form submission loading status
-  const [token, setToken] = useCookies(["mytoken"]);
+  const [token] = useCookies(["mytoken"]);
 
 
   const destinations = {
