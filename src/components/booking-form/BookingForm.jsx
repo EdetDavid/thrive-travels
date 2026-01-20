@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./bookingForm.css";
-import { useCookies } from "react-cookie";
 
 const BookingForm = () => {
   const [isFlightBooking, setIsFlightBooking] = useState(true);
   const [isLocal, setIsLocal] = useState(true);
   const [loading, setLoading] = useState(false); // State to track form submission loading status
-  const [token] = useCookies(["mytoken"]);
 
 
   const destinations = {
