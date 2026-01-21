@@ -28,7 +28,7 @@ const managementMembers = [
     role: "Ticketing Officer",
     bio: "Runs operations and ensures delivery excellence.",
   },
-   {
+  {
     imgSrc: male,
     name: "Saheed Omitogun",
     role: "Accounts Officer",
