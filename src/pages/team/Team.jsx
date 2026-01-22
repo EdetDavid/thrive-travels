@@ -3,18 +3,20 @@ import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
 import remi from "../../assets/images/team/Remi.jpg";
 import richard from "../../assets/images/team/Richard.jpeg";
+import tayo from "../../assets/images/directors/TAYO.png";
+import toyin from "../../assets/images/directors/Toyin.png";
 import "./Team.css";
 
 const managementTeam = [
   {
-    imgSrc: male,
+    imgSrc: tayo,
     name: "Omotayo Ajani",
     role: "Managing Director",
     bio: "Leads the company with a focus on innovation and long-term strategy.",
   },
 
   {
-    imgSrc: female,
+    imgSrc: toyin,
     name: "Oluwatoyin Adewuyi",
     role: "Executive Director",
     bio: "Leads the company with a focus on innovation and long-term strategy.",
@@ -48,6 +50,12 @@ const managementTeam = [
     bio: "Leads product engineering and technology strategy.",
   },
   {
+    imgSrc: remi,
+    name: "Oluwaremilekun Adebowale",
+    role: "Head, Branding and Corporate Communications",
+    bio: "Runs operations and ensures delivery excellence.",
+  },
+   {
     imgSrc: remi,
     name: "Oluwaremilekun Adebowale",
     role: "Head, Branding and Corporate Communications",

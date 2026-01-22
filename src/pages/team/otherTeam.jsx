@@ -1,6 +1,7 @@
 import React from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
+import david from "../../assets/images/team/David.png"
 import "./Team.css";
 
 const managementMembers = [
@@ -32,6 +33,12 @@ const managementMembers = [
     imgSrc: male,
     name: "Saheed Omitogun",
     role: "Accounts Officer",
+    bio: "Runs operations and ensures delivery excellence.",
+  },
+  {
+    imgSrc: david,
+    name: "David Edet",
+    role: "IT Support Officer",
     bio: "Runs operations and ensures delivery excellence.",
   },
 ];
