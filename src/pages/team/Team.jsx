@@ -55,12 +55,7 @@ const managementTeam = [
     role: "Head, Branding and Corporate Communications",
     bio: "Runs operations and ensures delivery excellence.",
   },
-   {
-    imgSrc: remi,
-    name: "Oluwaremilekun Adebowale",
-    role: "Head, Branding and Corporate Communications",
-    bio: "Runs operations and ensures delivery excellence.",
-  },
+
 ];
 
 const ManagementTeam = () => {
