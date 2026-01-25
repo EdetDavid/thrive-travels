@@ -40,7 +40,7 @@ const managementMembers = [
   {
     imgSrc: male,
     name: "Susam Samson",
-    role: "Accounts Officer",
+    role: "Admin Officer",
     bio: "Runs operations and ensures delivery excellence.",
   },
   {
