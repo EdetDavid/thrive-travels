@@ -757,6 +757,7 @@
 /* ========== MANAGEMENT TEAM (Redesigned) ========== */
 .management-team-section {
   padding: 3.5rem 1rem;
+  ;
   background: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
 }
 
@@ -817,11 +818,13 @@
   height: 280px;
   object-fit: cover;
   object-position: top center;
+  
 }
 
 .card-body {
   /* padding: 1.25rem; */
   display: flex;
+  padding-left: 10px !important;
   flex-direction: column;
   gap: 0.5rem;
 }
