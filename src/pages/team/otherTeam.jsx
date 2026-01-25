@@ -2,17 +2,19 @@ import React from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
 import david from "../../assets/images/team/David.png"
+import modupe from "../../assets/images/team/Modupe.png"
+import kome from "../../assets/images/team/Kome.png"
 import "./Team.css";
 
 const managementMembers = [
   {
-    imgSrc: male,
+    imgSrc: kome,
     name: "Oghenekome Ogbe",
     role: "R.M Energy & FIs",
     bio: "Leads the company with a focus on innovation and long-term strategy.",
   },
   {
-    imgSrc: female,
+    imgSrc: modupe,
     name: "Modupeola Onoshokun",
     role: "R.M Corporates",
     bio: "Leads product engineering and technology strategy.",
