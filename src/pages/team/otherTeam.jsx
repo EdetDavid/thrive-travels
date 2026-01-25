@@ -38,6 +38,12 @@ const managementMembers = [
     bio: "Runs operations and ensures delivery excellence.",
   },
   {
+    imgSrc: male,
+    name: "Susam Samson",
+    role: "Accounts Officer",
+    bio: "Runs operations and ensures delivery excellence.",
+  },
+  {
     imgSrc: david,
     name: "David Edet",
     role: "IT Support Officer",
