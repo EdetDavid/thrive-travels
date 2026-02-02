@@ -1,9 +1,10 @@
-import React, { useState, useMemo } from "react";
+import React, { useMemo } from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
 import david from "../../assets/images/team/David.png";
 import modupe from "../../assets/images/team/Modupe.png";
 import kome from "../../assets/images/team/Kome.png";
+import saheed from "../../assets/images/team/saheed.png";
 import "./Team.css";
 
 const TEAM_MEMBERS = [
@@ -44,7 +45,7 @@ const TEAM_MEMBERS = [
   },
   {
     id: "saheed-omitogun",
-    imgSrc: male,
+    imgSrc: saheed,
     name: "Saheed Omitogun",
     role: "Accounts Officer",
     department: "Finance.",
@@ -113,7 +114,7 @@ const SectionHeader = () => (
       <h2 className="team-section-title">Other Team Members</h2>
     </div>
   </div>
-);
+);``
 
 /**
  * TeamGrid - Container for team member cards
