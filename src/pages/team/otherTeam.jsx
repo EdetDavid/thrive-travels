@@ -140,7 +140,6 @@ const OtherTeamMembers = () => {
   return (
     <section
       className="management-team-section"
-      role="region"
       aria-label="Team Members"
     >
       <div className="team-container">
