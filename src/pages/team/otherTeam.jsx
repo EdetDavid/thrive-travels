@@ -138,10 +138,7 @@ const OtherTeamMembers = () => {
   const teamMembers = useMemo(() => TEAM_MEMBERS, []);
 
   return (
-    <section
-      className="management-team-section"
-      aria-label="Team Members"
-    >
+    <section className="management-team-section" aria-label="Team Members">
       <div className="team-container">
         <SectionHeader />
         <TeamGrid members={teamMembers} />
