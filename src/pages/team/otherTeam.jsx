@@ -114,7 +114,7 @@ const SectionHeader = () => (
       <h2 className="team-section-title">Other Team Members</h2>
     </div>
   </div>
-);``
+);
 
 /**
  * TeamGrid - Container for team member cards
