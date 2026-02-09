@@ -5,6 +5,7 @@ import david from "../../assets/images/team/David.png";
 import modupe from "../../assets/images/team/Modupe.png";
 import kome from "../../assets/images/team/Kome.png";
 import saheed from "../../assets/images/team/saheed.png";
+import susam from "../../assets/images/team/susam.png";
 import "./Team.css";
 
 const TEAM_MEMBERS = [
@@ -52,7 +53,7 @@ const TEAM_MEMBERS = [
   },
   {
     id: "susam-samson",
-    imgSrc: male,
+    imgSrc: susam,
     name: "Susam Samson",
     role: "Admin Officer",
     department: "Administration",
