@@ -95,7 +95,7 @@
   width: 100%;
   overflow: hidden;
   background: linear-gradient(135deg, #181344 0%, #ed1c24 100%);
-  padding-bottom: 125%;
+  padding-bottom: calc(110% - 10px);
 }
 
 .team-member-photo {
@@ -497,7 +497,7 @@
 .profile-image-container {
   position: relative;
   width: 100%;
-  padding-bottom: 110%;
+  padding-bottom: calc(110% - 10px);
   overflow: hidden;
   background: linear-gradient(135deg, #181344 0%, #ed1c24 100%);
   transform-style: preserve-3d;
