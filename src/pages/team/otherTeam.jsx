@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import male from "../../assets/images/male-avatar.png";
+// import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
 import david from "../../assets/images/team/David.png";
 import modupe from "../../assets/images/team/Modupe.png";
